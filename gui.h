@@ -12,6 +12,8 @@ public:
     explicit Gui(QMainWindow *parent = nullptr);
 private slots:
     void on_startButton_clicked();
+    void on_SpeedSlider_valueChanged(int value);
+
 private:
     QTimer* m_timer;
     bool m_status;
